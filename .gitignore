@@ -1,0 +1,7 @@
+chat/
+venv/
+db.sqlite3
+manage.py
+migrations/
+offroad_venture/settings.py
+.idea/

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static '/vendors/css/normalize.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/vendors/css/grid.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/vendors/css/ionicons.min.cs' %}s">
+    <link rel="stylesheet" type="text/css" href="{% static '/vendors/css/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/resources/css/styles.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/resources/css/queries.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+	<title>OFF-ROAD VENTURES</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="request_form">
+        <nav>
+            <div class="row">
+                <div class="col">
+            <h1>
+                <img src="{% static '/resources/img/offroad_logo3.png' %}" alt="off road venture logo" class="logo" height="60%">
+
+            </h1>
+                    </div>
+                <div class="col">
+            <div class="main-nav">
+			<ul>
+				<li><a href=href="{% url 'home' %}">Home</a></li>
+				<li><a href=href="{% url 'home' %}">How it Works</a></li>
+				<li><a href=href="{% url 'home' %}">Galaries</a></li>
+				<li><a href="{% url 'home' %}">Wildlife Safaries</a></li>
+			</ul>
+		</div>
+                    </div>
+                </div>
+	</nav>
+{#		<div class = "hero-text-box">#}
+{#<h1>mud fun adventure</h1>#}
+{#			<a class="btn btn-full" href="#contact">Direct Enquiry</a>#}
+{#			<a class="btn btn-full" href="#sign_up">Safaris</a>#}
+{#		</div>#}
+	</div>
+
+	<section id="contact" class="section-form">
+		<div class="row">
+			<h2>package enquiring section </h2>
+		</div>
+		<div class="row">
+			<form method="post" action="#" class="contact-form">
+                {% csrf_token %}
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label for="name">Name</label>
+					</div>
+					<div class="col span-2-of-3">
+						<input type="text" name="name" id="name" placeholder="Your name" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label for="email">Email</label>
+					</div>
+					<div class="col span-2-of-3">
+						<input type="email" name="email" id="email" placeholder="Your email" required>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label for="package">Select Your Package</label>
+					</div>
+					<div class="col span-2-of-3">
+						<select name="package" id="package">
+							<option value="select" >SELECT YOUR PACKAGE</option>
+							<option value="8days" >8 days majestic Kenya</option>
+							<option value="honeymoon"> Classic Kenyan Honeymoon</option>
+							<option value="7days"> Discover Kenya 7 days</option>
+							<option value="16days">Discover Kenya 16 days</option>
+							<option value="11days">11 days Green Safari</option>
+							<option value="10days">10 days all inclusive safari</option>
+							<option value="5days">Best Kenyan Safari 5 days</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label for="news_letter">Newsletter</label>
+					</div>
+					<div class="col span-2-of-3">
+						<input type="checkbox" name="news_letter" id="news_letter" checked> Yes, please
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label for="enquiry_message">Tell us about Your Enquiry</label>
+					</div>
+					<div class="col span-2-of-3">
+						<textarea name="enquiry_message" id="enquiry_message" placeholder="Your enquiry message"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label>&nbsp;</label>
+					</div>
+					<div class="col span-2-of-3">
+						<input type="submit" name="submit" value="Send it!">
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="row">
+			<div class="col span-1-of-1">
+				<ul class="footer-nav">
+					<li><a href="{% url 'home' %}">Who We Are</a></li>
+					<li><a href="{% url 'home' %}">How it Works</a></li>
+					<li><a href="{% url 'home' %}">Our Amenities</a></li>
+					<li><a href="{% url 'home' %}">Our Packages</a></li>
+					<li><a href="{% url 'home' %}">Direct Enquiry</a></li>
+				</ul>
+			</div>
+			<div class="col span-1-of-2">
+				<ul class="social-links">
+					<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+					<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+					<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+					<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<p>
+				Copyright &copy; 2021 Off-road adventures Kenya. All Right Reserved
+			</p>
+		</div>
+	</footer>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="{% static '/vendors/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static '/resources/js/script.js' %}"></script>
+
+
+</body>
+</html>

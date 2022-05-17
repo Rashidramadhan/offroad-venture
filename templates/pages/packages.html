@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static '/vendors/css/normalize.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/vendors/css/grid.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/vendors/css/ionicons.min.cs' %}s">
+    <link rel="stylesheet" type="text/css" href="{% static '/vendors/css/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/resources/css/styles.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/resources/css/queries.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+	<title>OFF-ROAD VENTURES</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="request_form">
+        <nav>
+            <div class="row">
+                <div class="col">
+            <h1>
+                <img src="{% static '/resources/img/offroad_logo3.png' %}" alt="off road venture logo" class="logo" height="60%">
+
+            </h1>
+                    </div>
+                <div class="col">
+            <div class="main-nav">
+			<ul>
+				<li><a href=href="{% url 'home' %}">Home</a></li>
+				<li><a href=href="{% url 'home' %}">How it Works</a></li>
+				<li><a href=href="{% url 'home' %}">Galaries</a></li>
+				<li><a href="{% url 'home' %}">Wildlife Safaries</a></li>
+			</ul>
+		</div>
+                    </div>
+                </div>
+	</nav>
+{#		<div class = "hero-text-box">#}
+{#<h1>mud fun adventure</h1>#}
+{#			<a class="btn btn-full" href="#contact">Direct Enquiry</a>#}
+{#			<a class="btn btn-full" href="#sign_up">Safaris</a>#}
+{#		</div>#}
+	</div>
+
+	<section id="sign_up" class="section-plans">
+		<div class="row">
+			<h2>Enjoy Most affordable trips with us</h2>
+        </div>
+			<div class="row">
+				<div class="col span-1-of-4">
+					<div class="plan-box">
+						<div>
+							<h3>5 Days 4 Nights</h3>
+							<p class="plan-price">$1550 <span></span></p>
+							<p class="plan-price.me"> Its only 1550$ per Person</p>
+						</div>
+						<div>
+						<ul>
+						<li> <i class="ion-ios-checkmark-empty icon-small"> </i> pickup On Arrival</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> Free tour guide</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> Four uninterupted tour exploration days </li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"> </i> Drive to  four National Parks</li>
+
+						</ul>
+						</div>
+						<div>
+{#                            <form action="#" method="post" class="contact-form">#}
+{#                               {% csrf_token %}#}
+{#                                <input type="submit" name="submit1" value="Request!">#}
+{#                            </form>#}
+							<a href="{% url 'request_form' %}" class="btn btn-ghost">Request!</a>
+						</div>
+
+					</div>
+				</div>
+				<div class="col span-1-of-4">
+					<div class="plan-box">
+						<div>
+							<h3>10 days safaris</h3>
+							<p class="plan-price">£2,900 <span></span></p>
+							<p class="plan-price.me"> £ 2,900 Inc. International flight</p>
+						</div>
+						<div>
+						<ul>
+						<li> <i class="ion-ios-checkmark-empty icon-small"> </i> pickup On Arrival</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> Free tour guide</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"> </i> Enjoy game and guided bush walks </li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"> </i> Camping out on dome tents </li>
+
+						</ul>
+						</div>
+						<div>
+{#							<form action="#" method="post" class="contact-form">#}
+{#                               {% csrf_token %}#}
+{#                                <input type="submit" name="submit2" value="Request!">#}
+{#                            </form>#}
+                            <a href="{% url 'request_form' %}" class="btn btn-ghost">Request!</a>
+						</div>
+
+					</div>
+				</div>
+				<div class="col span-1-of-4">
+					<div class="plan-box">
+						<div>
+							<h3>7 Days 6 Nights</h3>
+							<p class="plan-price">$2,000 <span></span></p>
+							<p class="plan-price.me"> Its only $2,000 per person</p>
+						</div>
+						<div>
+						<ul>
+						<li> <i class="ion-ios-checkmark-empty icon-small"> </i> pickup On Arrival</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> Free tour guide</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> six uninterupted tour exploration days </li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"> </i> Full Accomodation inclusive</li>
+
+						</ul>
+						</div>
+						<div>
+{#							<form action="#" method="post" class="contact-form">#}
+{#                               {% csrf_token %}#}
+{#                                <input type="submit" name="submit3" value="Request!">#}
+{#                            </form>#}
+                            <a href="{% url 'request_form' %}" class="btn btn-ghost">Request!</a>
+						</div>
+
+					</div>
+				</div>
+				<div class="col span-1-of-4">
+					<div class="plan-box">
+						<div>
+							<h3>8 Days 7 Nights</h3>
+							<p class="plan-price">$2,770 <span></span></p>
+							<p class="plan-price.me"> Its only 2,770$ per Person</p>
+						</div>
+						<div>
+						<ul>
+						<li> <i class="ion-ios-checkmark-empty icon-small"> </i> pickup On Arrival</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> Free tour guide</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> seven uninterupted tour exploration days </li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"> </i> Drive to National Parks and rift lakes</li>
+
+						</ul>
+						</div>
+						<div>
+{#							<form action="#" method="post" class="contact-form">#}
+{#                               {% csrf_token %}#}
+{#                                <input type="submit" name="submit4" value="Request!">#}
+{#                            </form>#}
+                            <a href="{% url 'request_form' %}" class="btn btn-ghost">Request!</a>
+						</div>
+
+					</div>
+				</div>
+
+
+
+		</div>
+			<div class="row">
+				<div class="col span-1-of-4">
+					<div class="plan-box">
+						<div>
+							<h3>11 days Trip and beach</h3>
+							<p class="plan-price">$3277 <span></span></p>
+							<p class="plan-price.me"> Its only 3,277$ per Person</p>
+						</div>
+						<div>
+						<ul>
+						<li> <i class="ion-ios-checkmark-empty icon-small"> </i> pickup On Arrival</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> Free tour guide</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> Visit to coastal beach </li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"> </i> Drive to National Parks and beautiful coastal beaches</li>
+
+						</ul>
+						</div>
+						<div>
+{#							<form action="#" method="post" class="contact-form">#}
+{#                               {% csrf_token %}#}
+{#                                <input type="submit" name="submit5" value="Request!">#}
+{#                            </form>#}
+                            <a href="{% url 'request_form' %}" class="btn btn-ghost">Request!</a>
+						</div>
+
+					</div>
+				</div>
+                <div class="col span-1-of-4">
+					<div class="plan-box">
+						<div>
+							<h3>classic honeymoon</h3>
+							<p class="plan-price">$3,410 <span></span></p>
+							<p class="plan-price.me"> 14 days from £ 3,410 pp Inc. international flights</p>
+						</div>
+						<div>
+						<ul>
+						<li> <i class="ion-ios-checkmark-empty icon-small"> </i> pickup On Arrival</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> Free tour guide</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> Fourteen uninterupted romantic tours </li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"> </i> Drive to National Parks and beautiful coastal beaches</li>
+
+						</ul>
+						</div>
+						<div>
+{#							<form action="#" method="post" class="contact-form">#}
+{#                               {% csrf_token %}#}
+{#                                <input type="submit" name="submit6" value="Request!">#}
+{#                            </form>#}
+                            <a href="{% url 'request_form' %}" class="btn btn-ghost">Request!</a>
+						</div>
+
+					</div>
+				</div>
+				<div class="col span-1-of-4">
+					<div class="plan-box">
+						<div>
+							<h3>16 Days 15 Nights</h3>
+							<p class="plan-price">$4,500 <span></span></p>
+							<p class="plan-price.me"> Its only 4,500 per person</p>
+						</div>
+						<div>
+						<ul>
+						<li> <i class="ion-ios-checkmark-empty icon-small"> </i> pickup On Arrival</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> Free tour guide</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"></i> Fifteen uninterupted tour exploration days </li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"> </i> All round tour from nairobi and Back</li>
+                            <li> <i class="ion-ios-checkmark-empty icon-small"> </i> Fully catered accomadation</li>
+
+						</ul>
+						</div>
+						<div>
+{#							<form action="#" method="post" class="contact-form">#}
+{#                               {% csrf_token %}#}
+{#                                <input type="submit" name="submit7" value="Request!">#}
+{#                            </form>#}
+                            <a href="{% url 'request_form' %}" class="btn btn-ghost">Request!</a>
+						</div>
+
+					</div>
+				</div>
+
+
+		</div>
+	</section>
+
+	<footer>
+		<div class="row">
+			<div class="col span-1-of-1">
+				<ul class="footer-nav">
+					<li><a href="{% url 'home' %}">Who We Are</a></li>
+					<li><a href="{% url 'home' %}">How it Works</a></li>
+					<li><a href="{% url 'home' %}">Our Amenities</a></li>
+					<li><a href="{% url 'home' %}">Our Packages</a></li>
+					<li><a href="{% url 'home' %}">Direct Enquiry</a></li>
+				</ul>
+			</div>
+			<div class="col span-1-of-2">
+				<ul class="social-links">
+					<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+					<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+					<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+					<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<p>
+				Copyright &copy; 2021 Off-road adventures Kenya. All Right Reserved
+			</p>
+		</div>
+	</footer>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="{% static '/vendors/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static '/resources/js/script.js' %}"></script>
+
+
+</body>
+</html>

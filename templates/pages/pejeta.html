@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static '/vendors/css/normalize.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/vendors/css/grid.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/vendors/css/ionicons.min.cs' %}s">
+    <link rel="stylesheet" type="text/css" href="{% static '/vendors/css/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/resources/css/styles.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/resources/css/queries.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+	<title>OFF-ROAD VENTURES</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+        <nav>
+            <div class="row">
+                <div class="col">
+            <h1>
+                <img src="{% static '/resources/img/offroad_logo3.png' %}" alt="off road venture logo" class="logo" height="60%">
+
+            </h1>
+                    </div>
+                <div class="col">
+            <div class="main-nav">
+			<ul>
+				<li><a href=href="{% url 'home' %}">Home</a></li>
+				<li><a href=href="{% url 'home' %}">How it Works</a></li>
+				<li><a href=href="{% url 'home' %}">Galaries</a></li>
+				<li><a href="{% url 'home' %}">Wildlife Safaries</a></li>
+			</ul>
+		</div>
+                    </div>
+                </div>
+	</nav>
+		<div class = "hero-text-box">
+<h1>mud fun adventure</h1>
+{#			<a class="btn btn-full" href="#contact">Direct Enquiry</a>#}
+{#			<a class="btn btn-full" href="#sign_up">Safaris</a>#}
+		</div>
+	</header>
+
+	<section id="about" class="section-features">
+		<div class="row">
+			<h2> ol pejeta conservancy</h2>
+			<p class="short-copy">
+                Ol Pejeta is one of the prime sanctuaries of Laikipia Plateau and all of the Big Five are present.
+            </p>
+            <p class="short-copy">
+            Its highlights include the largest black rhino sanctuary in East Africa, a population of southern white rhino,
+                a refuge for the last two northern white rhino left in the world and Sweetwaters Chimpanzee Sanctuary,
+                housing orphaned and abandoned chimpanzees.
+            </p>
+            <p class="short-copy">
+                Ol Pejeta Conservancy is located between the foothills of the Aberdares and the magnificent,
+                snow-capped Mount Kenya. Habitats here include semi-arid grassland, woodland,
+                riverine forest and wetland. The conservancy flanks the scenic Ewaso Nyiro River.
+            </p>
+            <a class="btn btn-full" href="{% url 'packages_list' %}">view our Packages</a>
+		</div>
+	</section>
+
+	<footer>
+		<div class="row">
+			<div class="col span-1-of-1">
+				<ul class="footer-nav">
+					<li><a href="{% url 'home' %}">Who We Are</a></li>
+					<li><a href=href="{% url 'home' %}">How it Works</a></li>
+					<li><a href=href="{% url 'home' %}">Our Amenities</a></li>
+					<li><a href=href="{% url 'home' %}">Our Packages</a></li>
+					<li><a href=href="{% url 'home' %}">Direct Enquiry</a></li>
+				</ul>
+			</div>
+			<div class="col span-1-of-2">
+				<ul class="social-links">
+					<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+					<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+					<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+					<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<p>
+				Copyright &copy; 2021 Off-road adventures Kenya. All Right Reserved
+			</p>
+		</div>
+	</footer>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="{% static '/vendors/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static '/resources/js/script.js' %}"></script>
+
+
+</body>
+</html>
