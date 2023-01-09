@@ -35,7 +35,7 @@ def home_page(request):
 
         else:
             print('*************', form.errors)
-    return render(request, 'home.html', {'messages': messages})
+    return render(request, 'home2.html', {'messages': messages})
 
 # request form for all packages enquiries
 def request_email(request):
@@ -43,6 +43,7 @@ def request_email(request):
         print('--------------inside post')
         form = GuestEnquiryForm(request.POST)
         if form.is_valid():
+            print(form.cleaned_data, '---')
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
             package = form.cleaned_data['package']

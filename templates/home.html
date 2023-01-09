@@ -2,7 +2,7 @@
 {% load static %}
 <html lang="en">
 <head>
-{#     <link rel="stylesheet" href="{% static '/resources/css/css/bootstrap.min.css' %}">#}
+     <link rel="stylesheet" href="{% static '/resources/css/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'resources/css/css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static '/resources/css/css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static '/resources/css/css/magnific-popup.css' %}">
@@ -48,11 +48,16 @@
 {#			<a class="btn btn-full" href="#sign_up">view our Packages</a>#}
 		</div>
 	</header>
-{#                    {% if messages %}#}
-{##}
-{#                      <div class="{{ messages.tags }}"> {{ messages }} </div>#}
-{##}
-{#                  {% endif %}#}
+    {{ messages }}
+    <div class="row">
+    {% if messages %}
+            <ul class="messages">
+
+                    <li{% if messages.tags %} class=" text-{{ messages.tags }}"{% endif %}>{{ messages }}</li>
+
+            </ul>
+        {% endif %}
+    </div>
 	<section id="about" class="section-features">
 		<div class="row">
 			<h2> Tour with us &mdash; share the adventurous memories </h2>
